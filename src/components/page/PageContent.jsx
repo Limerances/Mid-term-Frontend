@@ -398,14 +398,14 @@ export default function Page({pageName}) {
             >
               直接获取结果
             </Button> */}
-            <Button 
+            {/* <Button 
               variant="contained" 
               color="primary" 
               onClick={testapi} 
               sx={{ marginBottom: 2 }}
             >
               测试接口
-            </Button>
+            </Button> */}
             {isRunning && <LinearProgress value={progress} />}
           </Paper>
         </Grid>

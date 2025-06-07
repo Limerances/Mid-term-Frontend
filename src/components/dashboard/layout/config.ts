@@ -10,7 +10,7 @@ export const navItems = [
             {key: '内容三', title: '进程采样', href: paths.dashboard.part1_sub3},
             // {key: '内容四', title: '代码分析', href: paths.dashboard.part1_sub4},
             {key: '内容五', title: '数据裁剪', href: paths.dashboard.part1_sub5},
-            // {key: '内容六', title: '代码分析', href: paths.dashboard.part1_sub6},
+            {key: '内容六', title: '高效数据表示', href: paths.dashboard.part1_sub6},
             // {key: '内容七', title: '代码分析', href: paths.dashboard.part1_sub7},   
             // {key: '内容八', title: '代码分析', href: paths.dashboard.part1_sub8},
             // {key: '内容九', title: '代码分析', href: paths.dashboard.part1_sub9},
