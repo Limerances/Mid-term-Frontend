@@ -7,7 +7,7 @@ import {
 // import ReadOnlyCodeBox from './CodeContainer';
 import ReadOnlyCodeBox from '@/components/common/CodeContainer';
 import request from '@/lib/request/request';
-import { getImageResult ,getTextResult, getPageInfo} from "@/lib/api/user.js";
+import { getImageResult ,getTextResult, getPageInfo, testApi} from "@/lib/api/user.js";
 import { encryptCmd} from '@/lib/crypto/crypto.js';
 
 // 算法和数据集映射
@@ -83,8 +83,12 @@ export default function Page({pageName}) {
     const resultsBoxRef = React.useRef(null);
 
     const testapi = () => {
-        getPageInfo({ name: pageName }).then(res => {
-            console.log(res);
+        testApi({}).then(res => {
+            if (res.data.errno == 0) {
+                console.log(res.data);
+            } else {
+                console.error('测试接口失败:', res.data.message);
+            }
         }
         ).catch(err => {
             console.error('请求失败:', err);
@@ -394,14 +398,14 @@ export default function Page({pageName}) {
             >
               直接获取结果
             </Button> */}
-            {/* <Button 
+            <Button 
               variant="contained" 
               color="primary" 
               onClick={testapi} 
               sx={{ marginBottom: 2 }}
             >
               测试接口
-            </Button> */}
+            </Button>
             {isRunning && <LinearProgress value={progress} />}
           </Paper>
         </Grid>
@@ -461,6 +465,13 @@ export default function Page({pageName}) {
                       showLineNumbers={true} 
                     />
                 )}
+
+                {/* {item.type === 'html' && item.content && (
+                    // <iframe src="/myPage.html" width="100%" height="100%" title={item.name}></iframe>
+                    <div
+                    dangerouslySetInnerHTML={{ __html: item.content }}
+                  />
+                )} */}
 
                 {/* 这里可以添加其他类型的结果展示 */}
 

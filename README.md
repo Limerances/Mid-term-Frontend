@@ -1,5 +1,35 @@
-1. 安装node.js 16.15.1 版本 和 最新的npm
-2. 执行 npm install
-3. 执行 npm run dev
+### Mac 安装步骤
 
-* 后端接口修改路径：middle_check/src/lib/request/request.js 中，修改 BASE_URL 即可
+#### 环境安装
+
+```shell
+brew install nvm
+nvm list-remote
+nvm install 16.15.1
+npm --version
+npm config get registry
+npm install -g nrm
+nrm ls
+nrm use taobao
+```
+
+#### 项目加载
+
+切换到项目目录下
+
+```shell
+npm install
+```
+
+运行
+
+```shell
+npm run dev
+```
+
+#### 值得关注的文件
+
+```shell
+src/components/dashboard/layout/config.ts
+```
+

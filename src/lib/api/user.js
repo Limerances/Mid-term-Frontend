@@ -24,3 +24,11 @@ export function getTextResult(data) {
       data,
     });
   }
+
+  export function testApi(data) {
+    return request({
+      url: "/testApi",
+      method: "post",
+      data,
+    });
+  }
