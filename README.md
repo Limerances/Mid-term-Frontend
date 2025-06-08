@@ -19,6 +19,7 @@ nrm use taobao
 
 ```shell
 npm install
+npm install crypto-js
 ```
 
 运行
