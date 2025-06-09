@@ -50,7 +50,7 @@ export function SideNav(): React.JSX.Element {
     >
       <Stack spacing={2} sx={{ p: 3 }}>
         <Box sx={{ display: 'inline-flex', alignItems: 'center'}}>
-          <Logo color="light" height={32} width={32} />
+          <Logo color="light" height={60} width={60} />
           <Box
           sx={{
             alignItems: 'center',
@@ -60,7 +60,7 @@ export function SideNav(): React.JSX.Element {
           }}
         >
           <Box sx={{ flex: '1 1 auto' }}>
-            <Typography sx={{color: '#BAB8B8', fontSize: '13px'}}>
+            <Typography sx={{color: '#BAB8B8', fontSize: '14px'}}>
             面向新一代国产超算系统的性能分析和调试调优软件工具
 
             </Typography>

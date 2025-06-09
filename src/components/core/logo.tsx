@@ -19,9 +19,9 @@ export interface LogoProps {
 }
 
 export function Logo({height = HEIGHT, width = WIDTH }: LogoProps): React.JSX.Element {
-  const url = '/assets/logo.jpg';
+  const url = '/assets/logo.svg';
 
-  return <Box alt="logo" component="img" height={height} width={width} maxWidth={width} src={url} />;
+  return <Box alt="logo" component="img" height={height} width={width} maxWidth={width} src={url} backgroundColor="white"/>;
 }
 
 export interface DynamicLogoProps {

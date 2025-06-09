@@ -2,6 +2,9 @@ import type { NavItemConfig } from '@/types/nav';
 import { paths } from '@/paths';
 
 export const navItems = [
+    {
+        key: 'home', title: '首页', href: paths.home, icon: 'home',
+    },
     { key: '课题一', title: '课题一', href: paths.dashboard.part1, icon: 'chart-pie',
         subItems: 
         [
