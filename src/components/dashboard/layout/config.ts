@@ -9,7 +9,7 @@ export const navItems = [
         subItems: 
         [
             {key: '内容一', title: '海光统一采集接口', href: paths.dashboard.part1_sub1},
-            // {key: '内容二', title: '迈创统一采集接口', href: paths.dashboard.part1_sub2},//还没有
+            {key: '内容二', title: '迈创统一采集接口', href: paths.dashboard.part1_sub2},
             {key: '内容三', title: '性能事件采样', href: paths.dashboard.part1_sub3},//part1_sub2变part1_sub3
             {key: '内容四', title: '进程采样', href: paths.dashboard.part1_sub4},//part1_sub3变part1_sub4
             {key: '内容五', title: '数据裁剪', href: paths.dashboard.part1_sub5},//part1_sub5变part1_sub5
@@ -41,7 +41,6 @@ export const navItems = [
             {key: '内容十五', title: '轻量级并行调试工具与失效定位', href: paths.dashboard.part2_sub15},//part2_sub3变part2_sub15
             {key: '内容十六', title: '通用域性能监测接口测试', href: paths.dashboard.part2_sub16},//part3_sub1变part2_sub16
             {key: '内容十七', title: '加速域性能监测接口测试', href: paths.dashboard.part2_sub17},//part3_sub2变part2_sub17
-            //第二部分第二轮
         ]
     },
     {
@@ -57,7 +56,6 @@ export const navItems = [
             {key: '内容七', title: '故障定位', href: paths.dashboard.part3_sub7},//part1_sub8变part3_sub7
             {key: '内容八', title: '热点分析', href: paths.dashboard.part3_sub8},//part1_sub10变part3_sub8
             {key: '内容九', title: 'I/O诊断功能', href: paths.dashboard.part3_sub9},//part5_sub2变part3_sub9
-            //第三部分end
         ]
     }
 

@@ -42,6 +42,7 @@ export function SideNav(): React.JSX.Element {
         maxWidth: '100%',
         position: 'fixed',
         scrollbarWidth: 'none',
+        overflowY: 'auto',
         top: 0,
         width: 'var(--SideNav-width)',
         zIndex: 'var(--SideNav-zIndex)',

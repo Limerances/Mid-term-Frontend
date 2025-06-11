@@ -46,6 +46,7 @@ export default function Page({pageName}) {
     const [programList, setProgramList] = useState(null);
     const [poolName, setPoolName] = useState('');
     const [description, setDescription] = useState(null);
+    const [title, setTitle] = useState('');
 
     const [programs, setPrograms] = useState([]);
     const [selectedProgram, setSelectedProgram] = useState(null);
@@ -57,6 +58,7 @@ export default function Page({pageName}) {
                 setProgramList(res.data.info.programList);
                 setPoolName(res.data.info.pool.poolName);
                 setDescription(res.data.info.description);
+                setTitle(res.data.info.info.title);
                 console.log(programList);
                 console.log(description);
                 setPrograms(Object.keys(res.data.info.programList));
@@ -299,6 +301,9 @@ export default function Page({pageName}) {
     { programList && (
 
       <Paper elevation={0} sx={{ p: 3, mb: 3, borderRadius: 2, backgroundColor: '#f0f4f8', border: '1px solid #e0e0e0' }}>
+        <Typography variant="h5" sx={{ fontWeight: 700, mb: 2, color: 'secondary.main' }}>
+          {title}
+        </Typography>
         <Typography variant="body1" component="div" sx={{ lineHeight: 1.6, color: '#2d3436', fontSize: '0.95rem' }}>
             {Object.entries(description).map(([title, items],index) => (
                 <Box key={title} mb={1}> 
@@ -447,6 +452,23 @@ export default function Page({pageName}) {
                     {item.name}
                   </Typography>
                 </Box>
+
+                {/* {item.type === 'image' && item.content && (
+                  <Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 2 }}>
+                    <Image
+                        src={item.content}
+                        alt={item.name}
+                        duration={300}
+                        showLoading
+                        style={{
+                            maxWidth: '100%',
+                            maxHeight: '400px',
+                            objectFit: 'contain',
+                            cursor: 'pointer',
+                        }}
+                    />
+                  </Box>
+                )} */}
 
                 {item.type === 'image' && item.content && (
                   <Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 2 }}>
