@@ -20,6 +20,7 @@ nrm use taobao
 ```shell
 npm install
 npm install crypto-js
+npm install mui-image
 ```
 
 运行
