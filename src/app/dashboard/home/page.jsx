@@ -14,7 +14,7 @@ export default function Page() {
     <Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 2 }}>
         <img 
         src='/home.svg'
-        style={{width:'90%',  maxWidth: '100%', objectFit: 'contail' }}
+        style={{width:'100%',  maxWidth: '100%', objectFit: 'contail' }}
         // style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain' }} 
         />
     </Box>

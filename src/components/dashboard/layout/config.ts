@@ -5,17 +5,17 @@ export const navItems = [
     {
         key: 'home', title: '首页', href: paths.home, icon: 'home',
     },
-    { key: '第一部分', title: '性能分析基础软件支撑系统', href: paths.dashboard.part1, icon: 'chart-pie',
+    { key: '第一部分', title: '性能数据监采集与存储', href: paths.dashboard.part1, icon: 'chart-pie',
         subItems: 
         [
             {key: '内容一', title: '海光统一采集接口', href: paths.dashboard.part1_sub1},
             {key: '内容二', title: '迈创统一采集接口', href: paths.dashboard.part1_sub2},
+            {key: '内容六', title: '高效数据表示', href: paths.dashboard.part1_sub6},//part1_sub6变part1_sub6
+            {key: '内容八', title: 'IOP 采集功能', href: paths.dashboard.part1_sub8},//part5_sub1变part1_sub8
             {key: '内容三', title: '性能事件采样', href: paths.dashboard.part1_sub3},//part1_sub2变part1_sub3
             {key: '内容四', title: '进程采样', href: paths.dashboard.part1_sub4},//part1_sub3变part1_sub4
             {key: '内容五', title: '数据裁剪', href: paths.dashboard.part1_sub5},//part1_sub5变part1_sub5
-            {key: '内容六', title: '高效数据表示', href: paths.dashboard.part1_sub6},//part1_sub6变part1_sub6
             {key: '内容七', title: '统一接口技术功能', href: paths.dashboard.part1_sub7},//part1_sub1变part1_sub7
-            {key: '内容八', title: 'IOP 采集功能', href: paths.dashboard.part1_sub8},//part5_sub1变part1_sub8
             {key: '内容九', title: '数据提取', href: paths.dashboard.part1_sub9},//之前一版就还没给我,对应文件的内容 数据提取
             // {key: '内容七', title: '', href: paths.dashboard.part1_sub7},//之前一版就还没给我，对应文件的内容7
         ]
@@ -25,10 +25,10 @@ export const navItems = [
         subItems:
         [
             {key: '内容一', title: '程序调试信息获取', href: paths.dashboard.part2_sub1},//part3_sub3变part2_sub1
-            {key: '内容二', title: '技术开销轻量级测试', href: paths.dashboard.part2_sub2},//part3_sub4变part2_sub2
             {key: '内容三', title: '程序挂起检测', href: paths.dashboard.part2_sub3},//part3_sub5变part2_sub3
             {key: '内容四', title: 'I/O预测功能', href: paths.dashboard.part2_sub4},//part5_sub3变part2_sub4
             {key: '内容五', title: '编译器自动调优', href: paths.dashboard.part2_sub5},//part4_sub1变part2_sub5
+            {key: '内容二', title: '技术开销轻量级测试', href: paths.dashboard.part2_sub2},//part3_sub4变part2_sub2
             {key: '内容六', title: '计算性能自动调优', href: paths.dashboard.part2_sub6},//part4_sub3变part2_sub6
             {key: '内容七', title: '核函数计算性能自动建模', href: paths.dashboard.part2_sub7},//part4_sub2变part2_sub7
             {key: '内容八', title: '通信建模', href: paths.dashboard.part2_sub8},//part4_sub4变part2_sub8
@@ -49,13 +49,14 @@ export const navItems = [
         [
             {key: '内容一', title: '内存分析功能测试', href: paths.dashboard.part3_sub1},//part1_sub11变part3_sub1
             {key: '内容二', title: '性能轨迹分析功能测试', href: paths.dashboard.part3_sub2},//part1_sub14变part3_sub2
-            {key: '内容三', title: '通信分析', href: paths.dashboard.part3_sub3},//part1_sub12变part3_sub3
             {key: '内容四', title: '噪音检测', href: paths.dashboard.part3_sub4},//part1_sub9变part3_sub4
-            {key: '内容五', title: '可拓展性瓶颈检测功能测试', href: paths.dashboard.part3_sub5},//part1_sub15变part3_sub5
             {key: '内容六', title: '低效行为报告', href: paths.dashboard.part3_sub6},//part1_sub13变part3_sub6
+            {key: '内容九', title: 'I/O诊断功能', href: paths.dashboard.part3_sub9},//part5_sub2变part3_sub9
+            {key: '内容三', title: '通信分析', href: paths.dashboard.part3_sub3},//part1_sub12变part3_sub3
+            {key: '内容五', title: '可拓展性瓶颈检测功能测试', href: paths.dashboard.part3_sub5},//part1_sub15变part3_sub5
             {key: '内容七', title: '故障定位', href: paths.dashboard.part3_sub7},//part1_sub8变part3_sub7
             {key: '内容八', title: '热点分析', href: paths.dashboard.part3_sub8},//part1_sub10变part3_sub8
-            {key: '内容九', title: 'I/O诊断功能', href: paths.dashboard.part3_sub9},//part5_sub2变part3_sub9
+            
         ]
     }
 

@@ -234,6 +234,7 @@ export default function Page({pageName}) {
     //   const results = programList[selectedProgram].resultList;
     //   const eventSource = new EventSource(`${request.BASE_URL}/part3/execute/1/${urlAlgo}/${urlDataset}/`);
       const eventSource = new EventSource(`${request.BASE_URL}/excute/${poolName}/${encodedCmd}/`);
+      setResults(prev => ({ ...prev, terminal: prev.terminal + '服务器已连接 程序正在执行...\n' }));
 
       eventSource.onmessage = async (event) => {
         if (event.data === '[done]') {
